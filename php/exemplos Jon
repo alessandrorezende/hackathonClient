@@ -1,0 +1,6 @@
+$sth = mysql_query("SELECT ...");
+$rows = array();
+while($r = mysql_fetch_assoc($sth)) {
+    $rows['root_name'] = $r;
+}
+print json_encode($rows);

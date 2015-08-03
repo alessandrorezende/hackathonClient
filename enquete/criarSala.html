@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+
+
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1> Enquete Express</h1>
+            </div>
+
+            <div data-role="content">
+                <form>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <label>Senha:</label>
+                    <input type="text" name="senha" id="senha">
+                    <label>Senha Adm:</label>
+                    <input type="text" name="senhaAdm" id="senhaAdm">
+                    <a href="admSala.html"><button id="btn">Criar</button></a>
+                    
+                </form>
+
+                     <script>
+                     $(function(){
+                 
+                        $("#btn").click(function(){
+                 
+                        var a = $("input[name=nome]").val();
+                        var b = $("input[name=senha]").val();
+                        var c = $("input[name=senhaAdm]").val();
+                 
+                        $.ajax({
+                             
+                            type: "POST",
+                            data: { nome:a, senha:b, senhaAdm:c},
+                            url: "http://www.hackathongse.tecnologia.ws/gravar.php",
+                            dataType: "json",
+                            success: function(result){
+                             //   $("#bla").html('');
+                               // $("#bla").append(result);
+                            },
+                            beforeSend: function(){
+                                $('#loading').css({display:"block"});
+                            },
+                            complete: function(msg){
+                                $('#loading').css({display:"none"});
+                            }
+                        });
+                         
+                    });
+                     
+                     
+                });
+                    </script>
+                    <script type="text/javascript" src="js/func.js"></script>
+
+            </div> 
+        </div>
+    </body>
+</html>

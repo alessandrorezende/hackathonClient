@@ -1,0 +1,142 @@
+/******************************************************************
+FONTES
+******************************************************************/
+/*
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-qg7d2d');
+    src:url('../fonts/icomoon.eot?#iefix-qg7d2d') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-qg7d2d') format('woff'),
+        url('../fonts/icomoon.ttf?-qg7d2d') format('truetype'),
+        url('../fonts/icomoon.svg?-qg7d2d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'postamtregular';
+    src: url('../fonts/Postamt-webfont.eot');
+    src: url('../fonts/Postamt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Postamt-webfont.woff2') format('woff2'),
+         url('../fonts/Postamt-webfont.woff') format('woff'),
+         url('../fonts/Postamt-webfont.ttf') format('truetype'),
+         url('../fonts/Postamt-webfont.svg#postamtregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'foglihtenregular';
+    src: url('../fonts/Foglihten-068-webfont.eot');
+    src: url('../fonts/Foglihten-068-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Foglihten-068-webfont.woff2') format('woff2'),
+         url('../fonts/Foglihten-068-webfont.woff') format('woff'),
+         url('../fonts/Foglihten-068-webfont.ttf') format('truetype'),
+         url('../fonts/Foglihten-068-webfont.svg#foglihtenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+
+@font-face {
+  font-family: 'hk-demo';
+  src: url('fonts/hk-demo.eot');
+  src: url('fonts/hk-demo.eot#iefix') format('embedded-opentype'),
+       url('fonts/hk-demo.woff') format('woff'),
+       url('fonts/hk-demo.ttf') format('truetype'),
+       url('fonts/hk-demo.svg#hk-demo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.menu .panel {
+	background: #F3F3F3;
+	height: 600px;
+	
+	color: #ECF0F1;
+}
+.menu .panel a {
+	
+	color: #0055d4;
+	text-shadow: 0 0 0 rgba(0,0,0,0);
+	font-size: 14px;
+	padding: 15px 20px 15px 60px;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #475657;
+	border-top: 1px solid #95A5A6;
+	position: relative;
+	font-weight: 400;
+}
+.menu .panel ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border-bottom: 1px solid #95A5A6;
+}
+.menu .panel .avatar {
+	position: absolute;
+	top: 8px;
+	left: 20px;
+}
+.menu .ui-panel-inner {
+	padding: 0;
+}
+
+
+.menu .panel a:visited {
+	color: #0055d4;
+}
+.menu .panel a:hover {
+	/*background-color: #95A5A6;*/
+	background-color: #4682B4;
+	color: #fff;
+}
+
+
+.menu .panel.left a:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 15px;
+	left: 20px;
+	font-family: 'hk-demo';
+	text-align: center;
+	font-size: 18px;
+}
+
+
+
+.menu .panel.left .newsfeed a:before { 
+	content: '\f09e';
+}
+.menu .panel.left .profile a:before { 
+	content: '👤';
+}
+.menu .panel.left .setting a:before { 
+	content: '\2699';
+}
+.menu .panel.left .logout a:before { 
+	content: '\e78e';
+}
+.menu .panel.left .report a:before { 
+	content: '\f0e0';
+}
+
+/*everton*/
+.titleMenu{
+	
+	margin-left: 20px;
+
+}
+
+.menu-left{
+	
+
+
+}
